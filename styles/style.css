@@ -6,3 +6,73 @@ Green: #00B172
 White: #FFF
 
 */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+}
+
+.hero-logo {
+    height: 60%;
+    margin-left: 10px;
+}
+
+.hero-ul {
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+.hero-ul > li {
+    display: inline;
+    margin: 10px;
+}
+
+.hero-header {
+    position: relative;
+}
+
+.hero-photo {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.9;
+}
+
+.hero-h1 {
+    font-weight: 400;
+    font-size: 45px;
+}
+
+.hero-p {
+    font-weight : 300;
+    font-size: 18px;
+}
+
+.hero-h1 + p {
+    margin-top: -10px;
+}
