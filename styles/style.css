@@ -95,3 +95,71 @@ nav {
 .hero-h1 + p {
     margin-top: -10px;
 }
+
+
+
+.spotify_header{
+    text-align: center;
+ text-decoration: underline 2px #00B172;
+ text-underline-position: under;
+}
+
+
+
+.h2_spotify {
+    color:#00B172
+} 
+
+.p_spotify{font-size:large ;
+  color: grey;
+
+}
+
+.spotify{margin-left: 10px;
+    margin-right: 10px;
+
+  }
+  
+.container_spotify{
+    display: grid; 
+    grid-template-columns: 30% 30% 30%; 
+    grid-template-rows: 1fr; 
+    gap: 0px 2%; 
+    grid-template-areas: 
+      ". . ."; 
+    justify-content: center; 
+    
+    width: 100%; 
+    height: auto;
+
+   /* border: solid 3px orange;*/
+    margin-left: .5%;
+    margin-right: .5%;
+  }
+
+  
+  .sptify_card{
+      margin-top: 40px ; 
+      margin-bottom: 40px ;
+    height: 300;
+   /* border: solid 3px rgb(236, 236, 7);*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+
+
+}
+img{width: 100px;
+    height: 100px;
+    
+}
+@media (max-width: 1024px) {
+  .container_spotify{
+    display: flex;
+    flex-flow: column;
+    
+  }
+}
+
