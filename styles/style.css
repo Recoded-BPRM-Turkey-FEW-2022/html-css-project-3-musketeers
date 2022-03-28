@@ -163,3 +163,63 @@ nav {
   }
 }
 
+.kanye {
+    background-color: #00B172;
+    color: #FFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+    flex-wrap: wrap;
+}
+
+.kanye-div1 {
+    width: 600px;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.kanye-div2 {
+    width: 400px;
+    margin-top: 100px;
+    text-align: end;
+    margin-bottom: 60px;
+}
+
+div.kanye-div2 img {
+    width: 300px;
+    height: auto;
+}
+
+div.kanye-div1 h1 {
+    font-size: 250%;
+}
+
+div.kanye-div1 h2 {
+    font-size: 200%;
+}
+
+div.kanye-div1 p {
+    font-size: 150%;
+    width: 50%
+}
+
+#kanye-spotify {
+    position: absolute;
+    width: 8rem;
+    height: auto;
+    top: 35%;
+}
+
+@media only screen and (max-width: 1024px) {
+    #kanye-spotify {
+        display: none;
+    }
+
+    .kanye-div2 {
+        width: 400px;
+        margin-top: 50px;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+}
