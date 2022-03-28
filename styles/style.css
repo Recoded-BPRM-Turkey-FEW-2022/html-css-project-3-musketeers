@@ -163,6 +163,8 @@ nav {
   }
 }
 
+/* KINAN'S CODE */
+
 .kanye {
     background-color: #00B172;
     color: #FFF;
@@ -170,6 +172,14 @@ nav {
     flex-direction: row;
     justify-content: space-evenly; 
     flex-wrap: wrap;
+    position: relative;
+}
+
+#kanye-spotify {
+    position: absolute;
+    width: 8rem;
+    height: auto;
+    top: 35%;
 }
 
 .kanye-div1 {
@@ -202,13 +212,6 @@ div.kanye-div1 h2 {
 div.kanye-div1 p {
     font-size: 150%;
     width: 50%
-}
-
-#kanye-spotify {
-    position: absolute;
-    width: 8rem;
-    height: auto;
-    top: 35%;
 }
 
 @media only screen and (max-width: 1024px) {
