@@ -6,3 +6,223 @@ Green: #00B172
 White: #FFF
 
 */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    /* border: 1px solid red; */
+}
+
+.hero-logo {
+    height: 60%;
+    margin-left: 10px;
+}
+
+.hero-ul {
+    list-style-type: none;
+    margin-right: 10px;
+    /* border: 1px solid red; */
+}
+
+.hero-ul > li {
+    display: inline;
+    margin: 10px;
+    /* border: 1px solid red; */
+}
+
+@media all and (max-width: 590px) {
+    .hero-ul {
+        font-size: 12px;
+    }
+    .hero-logo {
+        height: 55%;
+    }
+    nav {
+        height: 40px;
+    }
+}
+
+.hero-header {
+    position: relative;
+}
+
+.hero-photo {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.9;
+    overflow: hidden;
+    max-width: 750ch;
+    width: 60%;
+
+}
+
+.hero-h1 {
+    font-weight: 400;
+    font-size: 45px;
+}
+
+.hero-p {
+    font-weight : 300;
+    font-size: 18px;
+}
+
+.hero-h1 + p {
+    margin-top: -10px;
+}
+
+/* GHUFRAN'S CODE STARTS HERE */
+
+.spotify_header{
+    text-align: center;
+ text-decoration: underline 2px #00B172;
+ text-underline-position: under;
+}
+
+
+
+.h2_spotify {
+    color:#00B172
+} 
+
+.p_spotify{font-size:large ;
+  color: grey;
+
+}
+
+.spotify{margin-left: 10px;
+    margin-right: 10px;
+
+  }
+  
+.container_spotify{
+    display: grid; 
+    grid-template-columns: 30% 30% 30%; 
+    grid-template-rows: 1fr; 
+    gap: 0px 2%; 
+    grid-template-areas: 
+      ". . ."; 
+    justify-content: center; 
+    
+    width: 100%; 
+    height: auto;
+
+   /* border: solid 3px orange;*/
+    margin-left: .5%;
+    margin-right: .5%;
+  }
+
+  
+  .sptify_card{
+      margin-top: 40px ; 
+      margin-bottom: 40px ;
+    height: 300;
+   /* border: solid 3px rgb(236, 236, 7);*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+
+
+}
+.img-spotify {width: 100px;
+    height: 100px;
+    
+}
+@media (max-width: 1024px) {
+  .container_spotify{
+    display: flex;
+    flex-flow: column;
+    
+  }
+}
+
+/* KINAN'S CODE */
+
+.kanye {
+    background-color: #00B172;
+    color: #FFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#kanye-spotify {
+    position: absolute;
+    width: 8rem;
+    height: auto;
+    top: 35%;
+}
+
+.kanye-div1 {
+    width: 600px;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.kanye-div2 {
+    width: 400px;
+    margin-top: 100px;
+    text-align: end;
+    margin-bottom: 60px;
+}
+
+div.kanye-div2 img {
+    width: 300px;
+    height: auto;
+}
+
+div.kanye-div1 h1 {
+    font-size: 250%;
+}
+
+div.kanye-div1 h2 {
+    font-size: 200%;
+}
+
+div.kanye-div1 p {
+    font-size: 150%;
+    width: 50%
+}
+
+@media only screen and (max-width: 1024px) {
+    #kanye-spotify {
+        display: none;
+    }
+
+    .kanye-div2 {
+        width: 400px;
+        margin-top: 50px;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+}
